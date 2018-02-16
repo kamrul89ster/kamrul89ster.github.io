@@ -1,14 +1,9 @@
-var video = document.getElementById("myVideo");
+const slides = document.querySelectorAll('#slides .sliderImg');
+let currentSlide = 0;
+let slideInterval = setInterval(nextSlide,2000);
 
-
-var btn = document.getElementById("myBtn");
-
-function myFunction() {
-    if (video.paused) {
-        video.play();
-        btn.innerHTML = "";
-    } else {
-        video.pause();
-        btn.innerHTML = "";
-    }
+function nextSlide(){
+    slides[currentSlide].className = 'sliderImg';
+    currentSlide = (currentSlide+1)%slides.length;
+    slides[currentSlide].className = 'sliderImg showing';
 }
