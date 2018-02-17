@@ -1,64 +1,121 @@
-body{
+html, body{
     margin: 0;
     padding: 0;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 18px;
-    line-height: 1.428571429;
-    background-color: #f3f3f3;
+    width: 100%;
 }
 
-.navigation {
-        padding-bottom: 30px;
-        background-color: #2e2e3e;
-        box-shadow: 0px 1px 6px 3px rgba(0, 0, 0, 0.15);
-        font-size: 14px;
-        font-weight: 600;
-        width: 100%;
-        z-index: 9;
-        line-height: 61px;
-        padding: 5px 25px;
+body{
+    font-family: "Ubuntu", sans-serif;
+}
+
+header{
+    width: 100%;
+    z-index: 5;
+}
+
+.logo{
+    position: fixed;
+    float: left;
+    margin: 16px 36px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.navbarlogo{
+    color: #fff;
+}
+
+.navbarlogo:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+nav{
+    position: fixed;
+    width: 100%;
+}
+
+nav ul{
+    list-style: none;
+    background: rgba(0,0,0,0.3);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    transition: 1s;
+}
+
+nav.black ul{
+    background: #000;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+    transition-duration: .3s;
+}
+
+nav ul li:hover{
+    border-bottom: solid 2px #fff;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-icon{
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+@media(max-width: 580px){
+    .logo{
         position: fixed;
         top: 0;
+        margin-top: 16px;
     }
-
-    .page-logo {
-        margin-top: 0px;
-        float: left;
+    
+    nav ul{
+        max-height: 0px;
+        background: #000;
     }
-
-    .navbar-right {
-        float: right;
+    
+    nav.black ul{
+        background: #000;
     }
-
-    .navbar-right ul {
-        margin-bottom: 0px;
+    
+    .navShowing{
+        max-height: 20em;
     }
-
-    .navbar-right a {
-        text-decoration: none;
-        padding: 10px;
-        font-weight: 900;
-        color: #fff;
-        transition-duration: .3s;
+    
+    nav ul li{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px 0;
+        text-align: center;
     }
-
-    .navbar-right a:hover {
-        text-decoration: none;
-        color: #fff;
-        border-bottom: solid #fff 2px;
+    
+    .menu-icon{
+        display: block;
     }
-
-    a.navbarlogo{
-        text-decoration: none;
-        font-weight: 900;
-        font-size: 20px;
-        line-height: 50px;
-        color: #2CF3D4;
-    }
-
-a.navbarlogo:hover{
-    text-decoration: none;
-    color: #2CF3D4;
 }
 
 #slides{
@@ -67,20 +124,20 @@ a.navbarlogo:hover{
     height: 100%;
     padding: 0px;
     margin: 0px;
+    z-index: -2;
 }
 
 .slide{
     position: absolute;
     left: 0px;
-    top: 70px;
+    top: 0;
     margin: 0;
     padding: 0;
 }
 
 .sliderImg{
     opacity: 0;
-    z-index: 1;
-    height: calc(100vh - 70px);
+    height: 100vh;
     width: 100%;
      -webkit-transition: opacity 1s;
     -moz-transition: opacity 1s;
@@ -90,12 +147,11 @@ a.navbarlogo:hover{
 
 .showing{
     opacity: 1;
-    z-index: 2;
 }
 
 .slideText{
     color: #fff;
-    z-index: 3;  
+    z-index: 1;  
     position: absolute;
     top: 200px;
     left: 50px;
@@ -105,7 +161,7 @@ a.navbarlogo:hover{
 
 .slideText2{
     color: #fff;
-    z-index: 3;  
+    z-index: 1;  
     position: absolute;
     top: 300px;
     left: 50px;
@@ -116,7 +172,7 @@ a.navbarlogo:hover{
 .survey{
     background-color: rgba(0,0,0,0.2);
     color: #ffffff;
-    z-index: 3;
+    z-index: 1;
     position: absolute;
     top: 400px;
     left: 50px;
