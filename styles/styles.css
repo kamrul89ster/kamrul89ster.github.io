@@ -36,6 +36,7 @@ header{
 nav{
     position: fixed;
     width: 100%;
+    z-index: 3;
 }
 
 nav ul{
@@ -50,7 +51,7 @@ nav ul{
 }
 
 nav.black ul{
-    background: #000;
+    background: black;
 }
 
 nav ul li{
@@ -86,40 +87,8 @@ nav ul li a:hover{
     display: none;
 }
 
-@media(max-width: 580px){
-    .logo{
-        position: fixed;
-        top: 0;
-        margin-top: 16px;
-    }
-    
-    nav ul{
-        max-height: 0px;
-        background: #000;
-    }
-    
-    nav.black ul{
-        background: #000;
-    }
-    
-    .navShowing{
-        max-height: 20em;
-    }
-    
-    nav ul li{
-        box-sizing: border-box;
-        width: 100%;
-        padding: 24px 0;
-        text-align: center;
-    }
-    
-    .menu-icon{
-        display: block;
-    }
-}
-
 #slides{
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 100%;
     padding: 0px;
@@ -170,7 +139,7 @@ nav ul li a:hover{
 }
 
 .survey{
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0);
     color: #ffffff;
     z-index: 1;
     position: absolute;
@@ -186,6 +155,7 @@ nav ul li a:hover{
 .survey:hover{
     background-color: #ffffff;
     color: black;
+    cursor: pointer;
 }
 
 .solutionPar,
@@ -225,12 +195,140 @@ h3{
 }
 
 video{
-    width: 700px;
+    width: 100%;
     border: solid;
     border-width:1px;
+    z-index: 0;
 }
 
 
 
 
 
+@media(max-width: 580px){
+    .logo{
+        position: fixed;
+        top: 0;
+        margin: 6px 36px;
+    }
+    
+    nav ul{
+        max-height: 0px;
+        background: #000;
+    }
+    
+    nav.black ul{
+        background: #000;
+    }
+    
+    .navShowing{
+        max-height: 20em;
+    }
+    
+    nav ul li{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px 0;
+        text-align: center;
+    }
+    
+    .menu-icon{
+        display: block;
+    }
+    
+    .sliderImg{
+        height: 70vh;
+    }
+    
+    .slideText{ 
+    position: absolute;
+    top: 70px;
+    left: 25px;
+    font-size: 30px;
+}
+
+    .slideText2{ 
+    position: absolute;
+    top: 140px;
+    left: 25px;
+    font-size: 20px;
+}
+
+    .survey{
+    position: absolute;
+    top: 240px;
+    left: 25px;
+    font-size: 30px;
+}
+    
+    
+    .solutionPar,
+    .productPar{
+    position: relative;
+    top: 380px;
+}
+}
+
+@media(min-width: 580px) and (max-width:785px){
+    .logo{
+        position: fixed;
+        top: 0;
+        margin: 6px 36px;
+    }
+    
+    nav ul{
+        max-height: 0px;
+        background: #000;
+    }
+    
+    nav.black ul{
+        background: #000;
+    }
+    
+    .navShowing{
+        max-height: 20em;
+    }
+    
+    nav ul li{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px 0;
+        text-align: center;
+    }
+    
+    .menu-icon{
+        display: block;
+    }
+    
+    .sliderImg{
+        height: 70vh;
+    }
+    
+    .slideText{ 
+    position: absolute;
+    top: 70px;
+    left: 25px;
+    font-size: 50px;
+}
+
+    .slideText2{ 
+    position: absolute;
+    top: 150px;
+    left: 25px;
+    font-size: 30px;
+}
+
+    .survey{
+    position: absolute;
+    top: 240px;
+    left: 25px;
+    font-size: 40px;
+}
+    
+    .solutionPar,
+    .productPar{
+    position: relative;
+    top: 400px;
+}
+    
+    }
