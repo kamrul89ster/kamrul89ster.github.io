@@ -2,6 +2,8 @@ html, body{
     margin: 0;
     padding: 0;
     width: 100%;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 body{
@@ -159,7 +161,8 @@ nav ul li a:hover{
 }
 
 .solutionPar,
-.productPar{
+.productPar,
+footer{
     position: relative;
     top: 700px;
     width: 100%;
@@ -263,7 +266,8 @@ video{
     
     
     .solutionPar,
-    .productPar{
+    .productPar,
+    footer{
     position: relative;
     top: 380px;
 }
@@ -326,9 +330,51 @@ video{
 }
     
     .solutionPar,
-    .productPar{
+    .productPar,
+    footer{
     position: relative;
     top: 400px;
 }
     
     }
+
+footer {
+    background-color: black;
+    width: 100%;
+    bottom: 0;
+    font-weight: lighter;
+    color: white;
+    margin: 0;
+}
+footer h3{
+    font-weight:lighter;
+}
+footer ul{
+    padding-left:5px;
+    list-style:none;
+}
+footer p{
+    text-align : justify;
+    font-size : 12px;
+    width: 90%;
+}
+footer iframe {
+    width:90%;
+    height:170px;
+}
+.sm{
+    list-style:none;
+    overflow:auto;
+}
+.sm li {
+    display: inline;
+    padding:5px 5px 0 5px;
+    display: inline-block;
+} 
+
+ul.sm{
+    margin-bottom: 0;
+}
+.sm li a img {
+    width:32px;
+}
