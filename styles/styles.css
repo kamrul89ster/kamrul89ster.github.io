@@ -7,7 +7,7 @@ html, body{
 }
 
 body{
-    font-family: "Ubuntu", sans-serif;
+    font-family: "lato", sans-serif;
 }
 
 header{
@@ -162,6 +162,7 @@ nav ul li a:hover{
 
 .solutionPar,
 .productPar,
+.aboutPar,
 footer{
     position: relative;
     top: 700px;
@@ -181,6 +182,22 @@ footer{
 }
 .productSection{
     padding: 60px 20px;
+}
+
+.missonPar{
+
+    padding-top: 30px;
+    text-align: left;
+}
+.vissonPar{
+    padding-left: 270px;
+    padding-top: 50px;
+    text-align: left;
+}
+.goalPar{
+    padding-left: 540px;
+    padding-top: 70px;
+    text-align: left;
 }
 
 
@@ -206,141 +223,8 @@ video{
 
 
 
-
-
-@media(max-width: 580px){
-    .logo{
-        position: fixed;
-        top: 0;
-        margin: 6px 36px;
-    }
-    
-    nav ul{
-        max-height: 0px;
-        background: #000;
-    }
-    
-    nav.black ul{
-        background: #000;
-    }
-    
-    .navShowing{
-        max-height: 20em;
-    }
-    
-    nav ul li{
-        box-sizing: border-box;
-        width: 100%;
-        padding: 24px 0;
-        text-align: center;
-    }
-    
-    .menu-icon{
-        display: block;
-    }
-    
-    .sliderImg{
-        height: 70vh;
-    }
-    
-    .slideText{ 
-    position: absolute;
-    top: 70px;
-    left: 25px;
-    font-size: 30px;
-}
-
-    .slideText2{ 
-    position: absolute;
-    top: 140px;
-    left: 25px;
-    font-size: 20px;
-}
-
-    .survey{
-    position: absolute;
-    top: 240px;
-    left: 25px;
-    font-size: 30px;
-}
-    
-    
-    .solutionPar,
-    .productPar,
-    footer{
-    position: relative;
-    top: 380px;
-}
-}
-
-@media(min-width: 580px) and (max-width:785px){
-    .logo{
-        position: fixed;
-        top: 0;
-        margin: 6px 36px;
-    }
-    
-    nav ul{
-        max-height: 0px;
-        background: #000;
-    }
-    
-    nav.black ul{
-        background: #000;
-    }
-    
-    .navShowing{
-        max-height: 20em;
-    }
-    
-    nav ul li{
-        box-sizing: border-box;
-        width: 100%;
-        padding: 24px 0;
-        text-align: center;
-    }
-    
-    .menu-icon{
-        display: block;
-    }
-    
-    .sliderImg{
-        height: 70vh;
-    }
-    
-    .slideText{ 
-    position: absolute;
-    top: 70px;
-    left: 25px;
-    font-size: 50px;
-}
-
-    .slideText2{ 
-    position: absolute;
-    top: 150px;
-    left: 25px;
-    font-size: 30px;
-}
-
-    .survey{
-    position: absolute;
-    top: 240px;
-    left: 25px;
-    font-size: 40px;
-}
-    
-    .solutionPar,
-    .productPar,
-    footer{
-    position: relative;
-    top: 400px;
-}
-    
-    }
-
 footer {
     background-color: black;
-    width: 100%;
     bottom: 0;
     font-weight: lighter;
     color: white;
