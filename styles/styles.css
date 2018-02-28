@@ -1,6 +1,6 @@
 html, body{
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
@@ -193,7 +193,6 @@ footer{
 }
 
 .missonPar{
-
     padding-top: 30px;
     text-align: left;
 }
@@ -241,6 +240,7 @@ footer{
     box-shadow:  inset 0 20px 20px -20px rgba(0, 145, 234,0.5);
     width: 100% !important;
     margin: 0 !important;
+    padding: 0 !important;
 }
 
 input{
@@ -253,18 +253,16 @@ input{
     text-align: center;
 }
 
-/*
-
-form{
-    width: 80%;
-    margin: 20px 10%;
-}
-*/
-
 .kontaktBtn,
 .surveyBtn{
     width: 80%;
     margin: 20px 10% !important;
+}
+
+.social{
+    width: 100% !important;
+    padding: 10px;
+    background: #0091ea;
 }
 
 @media(max-width: 580px){
@@ -323,11 +321,9 @@ form{
     font-size: 30px;
 }
     
-    
-    .solutionPar,
-    .productPar{
-    position: relative;
-    top: 380px;
+
+.missonPar, .vissonPar, .goalPar{
+    padding-left: 25px;
 }
 }
 
@@ -387,10 +383,10 @@ form{
     font-size: 40px;
 }
     
-    .solutionPar,
-    .productPar{
-    position: relative;
-    top: 400px;
+    
+
+.missonPar, .vissonPar, .goalPar{
+    padding-left: 25px;
 }
     
     }
