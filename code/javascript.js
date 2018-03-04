@@ -28,16 +28,18 @@ $(document).ready(function(){
 //})
 //
 //scrolling effect
-const emailForm = document.querySelector('#email');
-emailForm.addEventListener('submit',(event)=>{
-    const formData = new FormData(form);
-    const userName = formData.get('name');
-    const userCompany = formData.get('company');
-    const userEmail = formData.get('email');
-    console.log(userCompany);
-    console.log(userEmail);
-    console.log(userName);
-});
 
-
+//
+//const emailForm = document.querySelector('#email');
+//emailForm.addEventListener('submit',(event)=>{
+//    const formData = new FormData(form);
+//    const userName = formData.get('user');
+//    const userCompany = formData.get('company');
+//    const userEmail = formData.get('email');
+//    console.log(userCompany);
+//    console.log(userEmail);
+//    console.log(userName);
+//});
+//
+//
 

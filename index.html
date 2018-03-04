@@ -108,13 +108,14 @@
             <p>Orem lpsum is simply dummy text of the printing and typesetting industry.</p>
         </div>
         <div class="footerContact col-md-6">
-            <form id="email">
-                <input type="text" name="name" placeholder="Navn">
+            <form id="email" action="https://formspree.io/sd1@flowint.org" method="POST">
+                <input type="text" name="user" placeholder="Navn">
                 <input type="text" name="company" placeholder="Det Firma">
                 <input type="email" name="email" placeholder="E-mail">
                 <button type="submit" class="kontaktBtn">Led os komme i kontakt</button>
+                <input type="hidden" name="_next" value="sup_pages/tak.html">
             </form>
-            <p>Glem ikke at udfylde vores undersøgelse</p>
+            <p class="input">Glem ikke at udfylde vores undersøgelse</p>
             <button class="surveyBtn">Udfyld vores undersøgelse</button>
         </div>
             </div>
@@ -122,7 +123,7 @@
             <div class="social-icons">
                 <img src="icons/if_FB_1230739.svg" width="50px">
                 <img src="icons/if_LINKEDIN_1230726.svg" width="50px">
-                <img src="icons/if_GMAIL_1230734.svg" width="50px">
+                <a href="mailto:sd1@flowint.org?subject=FlowInt"><img src="icons/if_GMAIL_1230734.svg" width="50px"></a>
             </div>
         </div>
     </footer>
