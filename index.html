@@ -31,7 +31,7 @@
                         <li><a href="#solutionPar">Our Solutions</a></li>
                         <li><a href="#productPar">Our Product</a></li>
                         <li><a href="#aboutPar">About us</a></li>
-                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#comtactPar">Contact us</a></li>
                     </ul>
                 </div>
             </nav>
@@ -39,12 +39,12 @@
     </div>
     <slider>
         <div id="slides">
-            <h1 class="slideText">FLOW INTelligence</h1>
-            <h2 class="slideText2">Fleksibel platform for digitale processer</h2>
-            <button class="survey">Fill our survey</button>
             <div class="slide showing"> <img class="sliderImg" src="test/1.JPG" /></div>
             <div class="slide"> <img class="sliderImg" src="test/2.jpg" /></div>
             <div class="slide"> <img class="sliderImg" src="test/3.jpg" /></div>
+            <h1 class="slideText">FLOW INTelligence</h1>
+            <h2 class="slideText2">Fleksibel platform for digitale processer</h2>
+            <button class="survey">Fill our survey</button>
         </div>
     </slider>
     <div class="container solutionPar" id="solutionPar">
@@ -72,6 +72,7 @@
             </div>
         </div>
     </div>
+    <!-- product container -->
     <div class="container productPar" id="productPar">
         <h1>Our Product</h1>
         <div class="col-sm-8 productSection">
@@ -85,8 +86,10 @@
             <br> Orem lpsum is simply dummy text of the printing and typesetting industry.
             <br> Orem lpsum is simply dummy text of the printing and typesetting industry. </div>
     </div>
+
+    <!-- about container -->
     <div class="container aboutPar" id="aboutPar">
-        <h2>About us</h2>
+        <h1>About us</h1>
         <div class="missonPar">
             <h3>Misson</h3>
             <p> Orem lpsum is simply dummy text of the printing and typesetting industry. </p>
@@ -100,30 +103,51 @@
             <p> Orem lpsum is simply dummy text of the printing and typesetting industry. </p>
         </div>
     </div>
-    <footer>
-        <h2>Kontakt Os</h2>
+    <!-- content about kontact us -->
+    <div class="container contactPar" id="comtactPar">
+        <h1>Kontakt Os</h1>
         <div class="row">
-        <div class="footerMap col-md-6">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2250.0185829478683!2d12.573926315053043!3d55.671277005745424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46525314a37f6579%3A0xdbb19faae3513bac!2sH.+C.+Andersens+Blvd.+48%2C+1553+K%C3%B8benhavn!5e0!3m2!1sen!2sdk!4v1519829823627" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-            <ul class="contactInfo">
-                <li><strong>Phone:</strong> 00 00 00 00</li>
-                <li><strong>E-mail:</strong> email@flowint.com</li>
-            </ul>
-        </div>
-        <div class="footerContact col-md-6">
-            <form id="email" action="https://formspree.io/sd1@flowint.org" method="POST">
-                <input type="text" name="user" placeholder="Navn">
-                <input type="text" name="company" placeholder="Det Firma">
-                <input type="email" name="email" placeholder="E-mail">
-<!--                <input type="text" name="message" placeholder="Besked" id="msg">-->
-                <textarea rows="3" cols="50" name="msg" placeholder="Besked"></textarea>
-                <button type="submit" class="kontaktBtn">Led os komme i kontakt</button>
-                <input type="hidden" name="_next" value="sup_pages/tak.html">
-            </form>
-            <p class="input">Glem ikke at udfylde vores undersøgelse</p>
-            <button class="surveyBtn">Udfyld vores undersøgelse</button>
-        </div>
+            <div class="subContactPar col-sm-6">
+                <div class="map">
+                <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2250.0185829478683!2d12.573926315053043!3d55.671277005745424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46525314a37f6579%3A0xdbb19faae3513bac!2sH.+C.+Andersens+Blvd.+48%2C+1553+K%C3%B8benhavn!5e0!3m2!1sen!2sdk!4v1519829823627"  allowfullscreen></iframe>
+                </div>
+                <p><strong>Phone:</strong> 00 00 00 00</p>
+                <p><strong>E-mail:</strong> email@flowint.com</p>
             </div>
+                
+            
+            <div class="subContactPar col-sm-6">
+                <form id="email" action="https://formspree.io/sd1@flowint.org" method="POST">
+                    <div class="form-group">
+                        <label for="user">User</label>
+                        <input type="text" name="user" class="form-control" id="user" aria-describedby="emailHelp" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="companyName">Company name</label>
+                        <input type="text" name="company" class="form-control" id="companyName" aria-describedby="emailHelp" placeholder="Enter company name">
+                       
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <!-- 
+                    <input type="text" name="user">
+                   
+                    <input type="text" name="company">
+                    <input type="email" name="email"> -->
+                    <!--                <input type="text" name="message" placeholder="Besked" id="msg">-->
+                    <!-- <textarea rows="3" cols="50" name="msg" placeholder="Besked"></textarea> -->
+                    <button type="submit" class="kontaktBtn">kontakt</button>
+                    <input type="hidden" name="_next" value="sup_pages/tak.html">
+                </form>
+                <p class="input">Glem ikke at udfylde vores undersøgelse</p>
+                <button class="surveyBtn">Udfyld vores undersøgelse</button>
+            </div>
+        </div>
+    </div>
+    <footer>
         <div class="social">
             <div class="social-icons">
                 <img src="icons/if_FB_1230739.svg" width="40px">
