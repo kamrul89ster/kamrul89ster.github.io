@@ -112,10 +112,10 @@ nav ul li a:hover{
     opacity: 0;
     height: 100vh;
     width: 100%;
-     -webkit-transition: opacity 1s;
-    -moz-transition: opacity 1s;
-    -o-transition: opacity 1s;
-    transition: opacity 1s;
+     -webkit-transition: opacity 3s;
+    -moz-transition: opacity 3s;
+    -o-transition: opacity 3s;
+    transition: opacity 3s;
 }
 
 .showing{
